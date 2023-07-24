@@ -1,0 +1,15 @@
+@use '/src/lib/style/lib.scss';
+
+body, button {
+    font-family: "interstate", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    color: lib.$color-accent-b;
+    background-color: lib.$color-bg-a;
+}

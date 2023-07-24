@@ -1,0 +1,59 @@
+// Color and size variables for my website
+$small: 350px;
+$medium: 500px;
+$large: 800px;
+$xlarge: 1000px;
+
+
+$scale: 1px;
+
+$color-bg-a: hsl(35, 30%, 90%);
+$color-bg-b: hsl(35, 30%, 80%);
+$color-bg-c: hsl(35, 30%, 60%);
+
+
+$color-primary-a: hsl(151, 15%, 40%);
+$color-primary-b: hsl(151, 15%, 50%);
+$color-primary-c: hsl(151, 15%, 80%);
+
+$color-accent-a: hsl(151, 20%, 20%);
+$color-accent-b: hsl(151, 20%, 30%);
+
+$color-text-a: hsl(151, 20%, 10%);
+$color-text-b: hsl(151, 20%, 15%);
+
+$color-text-bg: hsl(0, 0%, 90%);
+
+$color-transparent: hsla(0, 0%, 0%, 0);
+
+@mixin btn {
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 12px;
+    border: none;
+    &.bigger {
+        padding: 16px;
+        font-size: 14pt;
+    }
+}
+
+.btn-primary {
+    @include btn;
+    color: $color-bg-a;
+    background-color: $color-accent-a;
+    border: 2px solid $color-accent-a;
+    transition: all 0.2s ease;
+    &:hover {
+        color: $color-accent-a;
+        background-color: $color-bg-a;
+        box-shadow: 4px 4px 0px $color-accent-a;
+    }
+    &.on-card {
+        color: $color-bg-b;
+
+        &:hover {
+            color: $color-accent-a;
+
+        }
+    }
+}
