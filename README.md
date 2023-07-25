@@ -1,3 +1,3 @@
-# My portfolio website
+# My portfolio page
 
-See it ['live'](https://ptmn.io)
+See it live on my [website](https://ptmn.io)
