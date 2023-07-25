@@ -8,12 +8,12 @@
         Projects
     </BannerCard>
     <ProjectCard hue="30" header="Marigold" image="/images/marigold.png" buttonLink="https://marigoldmusic.live" buttonLabel="Check out the demo">
-        <p>A full-stack music streaming app that puts you in the driver's seat. Upload your own music and enjoy the convenience of streaming apps while retaining control of your library.</p>
+        <p>A full-stack music streaming app that puts you in the driver's seat. Upload your own music and enjoy the convenience of streaming apps while retaining control of your library. By far the coolest thing I've built (yet...)</p>
         <p>Built with <b>SvelteKit, SCSS, TypeScript, Laravel, and MySQL</b></p>
     </ProjectCard>
     <ProjectCard hue="30" header="My Old Website" image="/images/old-website.jpeg" buttonLink="https://marigoldmusic.live" buttonLabel="Check out the demo" reversed>
         <p>An older version of my portfolio website I built in college.</p>
-        <p>Built with <b>Flask, Bootstrap, jQuery, and MySQL</b></p>
+        <p>Built with <b>Bootstrap and jQuery</b></p>
     </ProjectCard>
 
     
