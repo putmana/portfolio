@@ -1,33 +1,37 @@
-// Color and size variables for my website
+// Screen break sizes
 $small: 350px;
 $medium: 500px;
 $large: 800px;
 $xlarge: 1000px;
 
+// Hue, saturation, and lightness values for background colors
+$hue-bg: 35;
+$lig-bg-a: 90%;
+$lig-bg-b: 80%;
+$lig-bg-c: 70%; 
+$sat-bg: 30%;
 
-$scale: 1px;
+// Hue, saturation, and lightness values for accent colors
+$hue-accent: 151;
+$lig-accent-a: 20%;
+$lig-accent-b: 30%;
+$lig-accent-c: 40%;
+$sat-accent: 20%;
 
-$color-bg-a: hsl(35, 30%, 90%);
-$color-bg-b: hsl(35, 30%, 80%);
-$color-bg-c: hsl(35, 30%, 60%);
+// Set the background color palette
+$color-bg-a: hsl($hue-bg, $sat-bg, $lig-bg-a);
+$color-bg-b: hsl($hue-bg, $sat-bg, $lig-bg-b);
+$color-bg-c: hsl($hue-bg, $sat-bg, $lig-bg-c);
 
+// Set the accent color palette
+$color-accent-a: hsl($hue-accent, $sat-accent, $lig-accent-a);
+$color-accent-b: hsl($hue-accent, $sat-accent, $lig-accent-b);
+$color-accent-c: hsl($hue-accent, $sat-accent, $lig-accent-c);
 
-$color-primary-a: hsl(151, 15%, 40%);
-$color-primary-b: hsl(151, 15%, 50%);
-$color-primary-c: hsl(151, 15%, 80%);
-
-$color-accent-a: hsl(151, 20%, 20%);
-$color-accent-b: hsl(151, 20%, 30%);
-
-$color-text-a: hsl(151, 20%, 10%);
-$color-text-b: hsl(151, 20%, 15%);
-
-$color-text-bg: hsl(0, 0%, 90%);
-
-$color-transparent: hsla(0, 0%, 0%, 0);
 
 @mixin btn {
     text-transform: uppercase;
+    text-decoration: none;
     font-weight: 500;
     padding: 12px;
     border: none;
@@ -40,8 +44,9 @@ $color-transparent: hsla(0, 0%, 0%, 0);
 .btn-primary {
     @include btn;
     color: $color-bg-a;
-    background-color: $color-accent-a;
-    border: 2px solid $color-accent-a;
+    font-weight: 600;
+    background-color: $color-accent-b;
+    border: 3px solid $color-accent-a;
     transition: all 0.2s ease;
     &:hover {
         color: $color-accent-a;
@@ -53,7 +58,12 @@ $color-transparent: hsla(0, 0%, 0%, 0);
 
         &:hover {
             color: $color-accent-a;
-
         }
     }
+}
+
+.card {
+    border: 3px solid $color-accent-a;
+    box-shadow: 8px 8px 0px $color-accent-a;
+    margin: 10px;
 }

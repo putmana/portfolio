@@ -1,31 +1,19 @@
 <script>
+    import InfoCard from "$lib/components/cards/info-card.svelte";
 
 </script>
-<div class="wrapper">
-    <section class="namecard">
-        <div class="name">
-            Hi, I'm <span class="emphasis">Adam</span>
+<svelte:head>
+    <title>About | Adam Putman</title>
+</svelte:head>
+<div class="content">
 
-        </div>
-        <div class="subtext">
-            I'm a full-stack web developer based in Billings, Montana.
-        </div>
-        <div class="subtext">
-           I have a wide range of experience with several front-end languages and frameworks, such as Svelte, Vue, jQuery, Bootstrap, and SCSS.
-        </div>
-        <div class="subtext">
-            I also have experience with back-end technologies like PHP, Laravel, Flask, Django, Node, and SQL.
-        </div>
-        <div class="subtext">
-            With a keen eye for design, I know how to make your website beautiful and functional at the same time.  
-        </div>
-        <div class="btn">
-            <button class="btn-primary bigger on-card">
-                See my work
-            </button>
-        </div>
-        
-    </section>
+    <InfoCard header="Hi, I'm Adam" buttonLink="/projects" buttonLabel="See my work" size=4>
+        <p>I'm a full-stack web developer based in Billings, Montana.</p>
+        <p>I have a wide range of experience with several front-end languages and frameworks, such as Svelte, Vue, jQuery, Bootstrap, and SCSS.</p>
+        <p>I also have experience with back-end technologies like PHP, Laravel, Flask, Django, Node, and SQL.</p>
+        <p>With a keen eye for design, I know how to make your website beautiful and functional at the same time.</p>
+    </InfoCard>
+
     <section class="hero">
         <div class="caption">
             Red Lodge, Montana
@@ -38,8 +26,9 @@
 <style lang="scss">
     @use '/src/lib/style/lib.scss';
 
-    .wrapper {
+    .content {
         margin: 60px;
+        margin-top: 30px;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -56,65 +45,16 @@
         
     }
 
-    .namecard {
-        margin: 10px;
-        flex: 4;
-        padding: 60px;
-        color: lib.$color-accent-a;
-        background-color: lib.$color-bg-b;
-        border: 3px solid lib.$color-accent-a;
-        box-shadow: 8px 8px 0px lib.$color-accent-a;
-        .name {
-            font-size: 60pt;
-            font-weight: 400;
-            letter-spacing: -8px;
-        }
-        .subtext {
-            margin-top: 20px;
-            margin-left: 7px;
-            padding-left: 30px;
-            font-size: 14pt;
-            font-weight: 500;
-
-            border-left: 6px solid lib.$color-accent-a;
-        }
-        .emphasis {
-            font-weight: 500;
-            color: lib.$color-accent-a;
-        }
-        .btn {
-            display: flex;
-            margin-top: 40px;
-        }
-        
-        @media (max-width: lib.$large) {
-            padding: 30px;
-            .name {
-                font-size: 30pt;
-                letter-spacing: -2px;
-            }
-            .subtext {
-                font-size: 12pt;
-
-            }
-            .btn {
-                justify-content: center;
-            }
-        }
-
-        
-    }
-
     .hero {
         display: flex;
         flex-direction: column-reverse;
         min-height: 300px;
-        background-image: url("/images/hero-bg.jpg");
+        background-image: url("/images/hero-bg-color.jpg");
         background-size: cover;
         margin: 10px;
         flex: 3;
         background-position: center;
-        background-color: lib.$color-primary-c;
+        background-color: lib.$color-bg-c;
         border: 3px solid lib.$color-accent-a;
         box-shadow: 8px 8px 0px lib.$color-accent-a;
 

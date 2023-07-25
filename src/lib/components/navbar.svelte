@@ -6,23 +6,23 @@
 
 <div class="container">
     <div class="toggle-bar" class:hidden>
-        <div class="logo">
+        <a class="logo" href="/">
             PTMN<span class="accent">.</span>
-
-        </div>
+        </a>
         <input type="checkbox" id="toggle" class="toggler-box" bind:checked={hidden}>
         <label class="toggler" class:hidden for="toggle"><i class="bi bi-list"></i></label>
     </div>
     <ul class="links" class:hidden>
-        <a class="link" href="#">
+        <a class="link" href="https://www.github.com/putmana">
+            GITHUB
+        </a>
+        <a class="link" href="/contact">
             CONTACT
         </a>
-        <a class="link" href="#">
+        <a class="link" href="/projects">
             PROJECTS
         </a>
-        <a class="link" href="#">
-            ABOUT
-        </a>
+        
     </ul>
 </div>
 
@@ -30,7 +30,7 @@
 <style lang="scss">
     @use '/src/lib/style/lib.scss';
     .accent {
-        color: lib.$color-primary-b;
+        color: lib.$color-accent-c;
     }
 
 
@@ -43,6 +43,8 @@
         display: flex;
         align-items: center;
         .logo {
+            color: lib.$color-accent-a;
+            text-decoration: none;
             font-size: 14pt;
             font-weight: 800;
         }
@@ -51,13 +53,13 @@
         }
         .toggler {
             padding: 4px;
-            color: lib.$color-accent-a;
-            background-color: lib.$color-primary-c;
+            color: lib.$color-bg-b;
+            background-color: lib.$color-accent-b;
             border: 2px solid lib.$color-accent-a;
             transition: all 0.2s ease;
             &:hover:active {
-                color: lib.$color-accent-a;
-                background-color: lib.$color-primary-c;
+                color: lib.$color-bg-b;
+                background-color: lib.$color-accent-b;
                 border: 2px solid lib.$color-accent-a;
                 box-shadow: 4px 4px 0px lib.$color-accent-a;
             }
@@ -84,6 +86,7 @@
         text-decoration: none;
         transition: all 0.2s ease;
         padding: 10px;
+        font-weight: 600;
 
         &:hover {
             color: lib.$color-accent-a;

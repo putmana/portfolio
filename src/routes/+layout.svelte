@@ -12,6 +12,9 @@
         PTMN<span class="darken">.</span>
     </div>
     <div class="text">
+        Email: adam@ptmn.io
+    </div>
+    <div class="text">
         Copyright &copy 2023 Adam Putman. All rights reserved.
     </div>
 </section>
