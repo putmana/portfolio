@@ -38,7 +38,6 @@
         color: lib.$color-accent-a;
         border-color: lib.$color-accent-a;
         background-color: lib.$color-bg-b;
-        box-shadow: 8px 8px 0px lib.$color-accent-a;
         padding: 60px;
         .info {
             flex: 2;

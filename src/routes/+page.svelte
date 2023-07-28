@@ -1,10 +1,35 @@
 <script>
+    import BannerCard from "$lib/components/cards/banner-card.svelte";
+import HeroCard from "$lib/components/cards/hero-card.svelte";
+    import ImageCard from "$lib/components/cards/image-card.svelte";
     import InfoCard from "$lib/components/cards/info-card.svelte";
 
 </script>
 <svelte:head>
     <title>About | Adam Putman</title>
 </svelte:head>
+
+<div class="content">
+    <div class="row">
+        <HeroCard header="Hi, I'm Adam." image="/images/hero-bg-code-dark.png" buttonLink="/projects" buttonLabel="See My Work">
+            Full-stack web designer/developer
+        </HeroCard>
+    </div>
+    <div class="row">
+        <InfoCard header="About Me">
+            <p>Full-stack web developer based in Billings, Montana.</p>
+            <p>Graduated in 2023 from Montana State University Billings with an Associates Degree in Computer Programming and Application Development</p>
+            <p>Mainly specialized in front-end development (HTML, CSS, JavaScript, Svelte, Vue, Bootstrap, SCSS, and TypeScript)</p>
+            <p>Also experienced in back-end development (Python, C#, PHP, Laravel, MySQL)</p>
+            <p>Sharp eye for design</p>
+            <p>Extremely comfortable with Linux</p>
+            <p>Owns a cockatiel</p>
+        </InfoCard>
+        <ImageCard image="/images/hero-bg-color-sm.jpg" caption="Red Lodge, Montana" />
+    </div>
+</div>
+
+<!---
 <div class="content">
 
     <InfoCard header="Hi, I'm Adam" buttonLink="/projects" buttonLabel="See my work" size=4>
@@ -21,48 +46,28 @@
     </section>
 
 </div>
-
+--->
 
 <style lang="scss">
     @use '/src/lib/style/lib.scss';
 
     .content {
-        margin: 60px;
-        margin-top: 30px;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-
-        @media (max-width: lib.$xlarge) {
-            flex-direction: column;
+        padding-bottom: 90px;
+        .row {
+            display: flex;
+            flex-direction: row;
+            padding-left: 60px;
+            padding-right: 60px;
         }
 
         @media (max-width: lib.$large) {
-            margin: 15px;
-            margin-top: 0px;
+            .row {
+                padding-left: 5px;
+                padding-right: 5px;
+                flex-direction: column;
+            }
         }
         
-    }
-
-    .hero {
-        display: flex;
-        flex-direction: column-reverse;
-        min-height: 300px;
-        background-image: url("/images/hero-bg-color.jpg");
-        background-size: cover;
-        margin: 10px;
-        flex: 3;
-        background-position: center;
-        background-color: lib.$color-bg-c;
-        border: 3px solid lib.$color-accent-a;
-        box-shadow: 8px 8px 0px lib.$color-accent-a;
-
-        .caption {
-            padding: 10px;
-            background-color: lib.$color-bg-b;
-            border-top: 3px solid lib.$color-accent-a;
-        }
     }
     
 </style>

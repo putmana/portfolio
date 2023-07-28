@@ -28,15 +28,17 @@
 <style lang="scss">
     @use '/src/lib/style/lib.scss';
     .card {
+        flex: 1;
         color: lib.$color-accent-a;
         background-color: lib.$color-bg-b;
         padding: 60px;
+        min-width: 200px;
         
         .header {
             display: flex;
-            font-size: 60pt;
-            font-weight: 500;
-            letter-spacing: -4px;
+            font-size: 30pt;
+            font-weight: 700;
+            letter-spacing: -2px;
         }
         .body {
             display: flex;
@@ -56,6 +58,7 @@
     }
     @media (max-width: lib.$large) {
         .card {
+            flex: 1;
             padding: 30px;
             .header {
                 justify-content: center;

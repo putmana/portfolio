@@ -12,5 +12,12 @@ body {
     flex-direction: column;
     color: lib.$color-accent-a;
     background-color: lib.$color-bg-a;
+}
+ul {
+    padding-left: 10px;
+}
 
+p {
+    margin-top: 8px;
+    margin-bottom: 8px;
 }

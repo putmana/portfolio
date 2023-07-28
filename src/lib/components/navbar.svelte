@@ -1,7 +1,5 @@
 <script lang="ts">
     let hidden = true;
-
-    
 </script>
 
 <div class="container">
@@ -36,12 +34,13 @@
 
     .container {
         display: flex;
-        padding-left: 30px;
-        padding-right: 30px;
+        background-color: lib.$color-bg-a;
     }
     .toggle-bar {
         display: flex;
         align-items: center;
+        padding-left: 30px;
+        padding-right: 30px;
         .logo {
             color: lib.$color-accent-a;
             text-decoration: none;
@@ -76,10 +75,11 @@
     
     }
     .links {
-        padding: 0;
         margin: 0;
         display: flex;
         list-style-type: none;
+        flex-grow: 1;
+        padding-right: 30px;
     }
     .link {
         color: inherit;
@@ -129,10 +129,8 @@
         .container {
             height: 70px;
             align-items: center;
-            
         }
         .toggle-bar {
-            
             flex-grow: 1;
             .logo {
                 line-height: 20px;
@@ -144,7 +142,6 @@
         }
         .links {
             flex-direction: row-reverse;
-            
             .link {
                 margin-left: 5px;
             }

@@ -11,8 +11,8 @@
 <style lang="scss">
     @use '/src/lib/style/lib.scss';
     .card {
-        color: lib.$color-bg-b;
-        background-color: lib.$color-accent-b;
+        color: lib.$color-bg-a;
+        background-color: lib.$color-accent-c;
         padding: 40px;
         padding-top: 20px;
         padding-bottom: 20px;
@@ -23,7 +23,6 @@
             letter-spacing: -3px;
             text-align: center;
         }
-        
     }
     @media (max-width: lib.$large) {
         .card {
