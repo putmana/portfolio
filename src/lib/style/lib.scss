@@ -44,6 +44,24 @@ $color-shadow: hsla($hue-accent, $sat-accent, $lig-accent-a, 30%);
     }
 }
 
+.content {
+    padding-bottom: 90px;
+    .row {
+        display: flex;
+        flex-direction: row;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    @media (max-width: $large) {
+        .row {
+            padding-left: 5px;
+            padding-right: 5px;
+            flex-direction: column;
+        }
+    }
+}
+
 .btn-primary {
     @include btn;
     color: $color-bg-a;

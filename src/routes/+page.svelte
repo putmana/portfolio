@@ -51,23 +51,6 @@ import HeroCard from "$lib/components/cards/hero-card.svelte";
 <style lang="scss">
     @use '/src/lib/style/lib.scss';
 
-    .content {
-        padding-bottom: 90px;
-        .row {
-            display: flex;
-            flex-direction: row;
-            padding-left: 60px;
-            padding-right: 60px;
-        }
-
-        @media (max-width: lib.$large) {
-            .row {
-                padding-left: 5px;
-                padding-right: 5px;
-                flex-direction: column;
-            }
-        }
-        
-    }
+    
     
 </style>

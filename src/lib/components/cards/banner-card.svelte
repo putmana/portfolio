@@ -12,7 +12,7 @@
     @use '/src/lib/style/lib.scss';
     .card {
         color: lib.$color-bg-a;
-        background-color: lib.$color-accent-c;
+        background-color: lib.$color-accent-b;
         padding: 40px;
         padding-top: 20px;
         padding-bottom: 20px;
