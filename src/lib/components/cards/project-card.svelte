@@ -5,6 +5,7 @@
     export let buttonLink: string | null = null;
     export let buttonLabel: string | null = null;
     export let reversed: boolean = false;
+    export let alt: string = "";
 
 </script>
 
@@ -25,7 +26,7 @@
         {/if}
     </div>
     <div class="image">
-        <img src={image}>
+        <img src={image} alt={alt}>
     </div>
     
 </div>
