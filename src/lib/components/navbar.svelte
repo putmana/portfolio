@@ -11,16 +11,15 @@
         <label class="toggler" class:hidden for="toggle"><i class="bi bi-list"></i></label>
     </div>
     <ul class="links" class:hidden>
-        <a class="link" href="https://www.github.com/putmana">
-            GITHUB
-        </a>
-        <a class="link" href="/contact">
-            CONTACT
+        <a class="link" href="/">
+            HOME
         </a>
         <a class="link" href="/projects">
             PROJECTS
         </a>
-        
+        <a class="link" href="/contact">
+            CONTACT
+        </a>
     </ul>
 </div>
 
@@ -42,32 +41,44 @@
         padding-left: 30px;
         padding-right: 30px;
         .logo {
+            transition: all 0.2s ease;
             color: lib.$color-accent-a;
             text-decoration: none;
             font-size: 14pt;
             font-weight: 800;
+            &:hover {
+                color: lib.$color-accent-a;
+                box-shadow: 0px 5px 0px lib.$color-accent-a;
+            }
+            &:active {
+                color: lib.$color-bg-c;
+                box-shadow: 0px 5px 0px lib.$color-bg-c;
+            }
+            &:focus-visible {
+                outline: 3px dotted lib.$color-accent-a;
+            }
         }
         .toggler-box {
             display: none;
         }
         .toggler {
-            padding: 4px;
-            color: lib.$color-bg-b;
-            background-color: lib.$color-accent-b;
-            border: 2px solid lib.$color-accent-a;
+            padding: 6px;
+            color: lib.$color-bg-a;
+            background-color: lib.$color-accent-c;
+            box-shadow: 4px 4px 0px lib.$color-accent-a;
             transition: all 0.2s ease;
             &:hover:active {
                 color: lib.$color-bg-b;
                 background-color: lib.$color-accent-b;
-                border: 2px solid lib.$color-accent-a;
-                box-shadow: 4px 4px 0px lib.$color-accent-a;
             }
             &.hidden {
                 color: lib.$color-accent-a;
                 background-color: transparent;
-                border: 2px solid transparent;
+                box-shadow: none;
+
                 &:hover:active {
-                    border: 2px solid lib.$color-accent-a;
+                    color: lib.$color-bg-b;
+                    background-color: lib.$color-accent-b;
                 }
             }
             
@@ -76,6 +87,7 @@
     }
     .links {
         margin: 0;
+        padding-left: 30px;
         display: flex;
         list-style-type: none;
         flex-grow: 1;
@@ -91,6 +103,13 @@
         &:hover {
             color: lib.$color-accent-a;
             box-shadow: 0px 5px 0px lib.$color-accent-a;
+        }
+        &:active {
+            color: lib.$color-bg-c;
+            box-shadow: 0px 5px 0px lib.$color-bg-c;
+        }
+        &:focus-visible {
+            outline: 3px dotted lib.$color-accent-a;
         }
     }
     @media (max-width: calc(lib.$large - 1px)) {
@@ -141,7 +160,8 @@
             
         }
         .links {
-            flex-direction: row-reverse;
+            flex-direction: row;
+            flex-grow: 0;
             .link {
                 margin-left: 5px;
             }

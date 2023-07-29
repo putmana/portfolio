@@ -67,18 +67,25 @@ $color-shadow: hsla($hue-accent, $sat-accent, $lig-accent-a, 30%);
     color: $color-bg-a;
     font-weight: 600;
     background-color: $color-accent-c;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
+    transition: outline none;   
+
     box-shadow: 4px 4px 0px $color-accent-b;
     &:hover {
         color: $color-accent-b;
         background-color: $color-bg-a;
     }
-    &:hover:active {
+    &:active {
         border-color: $color-accent-a;
         color: $color-accent-a;
         background-color: $color-bg-c;
         box-shadow: 2px 2px 0px $color-accent-a;
+    }   
+    &:focus-visible {
+        outline: 3px dotted $color-bg-a;
+        outline-offset: -6px;
     }
+
     &.on-card {
         color: $color-bg-b;
 
