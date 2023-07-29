@@ -1,11 +1,18 @@
 <script lang=ts>
+    import { clamp } from "$lib/lib";
+
     export let header: string;
     export let image: string = "";
     export let buttonLink: string | null = null;
     export let buttonLabel: string | null = null;
+
+    let y: number = 0;
+
 </script>
 
-<div class="card" style="--hero-img: url({image})">
+<svelte:window bind:scrollY={y}/>
+
+<div class="card" style="--hero-img: url({image}); --scroll-pos: {y}px">
     <div class="info">
         <div class="header">
             {header}
@@ -21,7 +28,6 @@
             </div>
         {/if}
     </div>
-    
 </div>
 
 <style lang="scss">
@@ -35,10 +41,9 @@
         color: lib.$color-bg-a;
         padding-top: 160px;
         padding-bottom: 160px;
-        background-image: var(--hero-img);
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
+        overflow: hidden;
+        position: relative;
+        background-size: contain;
         
         .info {
             display: flex;
@@ -58,6 +63,16 @@
             .footer {
                 margin-top: 10px;
             }
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            height: 500%;
+            width: 100%;
+            z-index: -1;
+            transform: translate(0, var(--scroll-pos));
+            background-image: var(--hero-img);
+            background-position: left;
         }
     }
     @media (max-width: lib.$large) {

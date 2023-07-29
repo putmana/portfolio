@@ -19,7 +19,6 @@
     </div>
 </section>
 
-
 <style lang="scss">
     @use '/src/lib/style/lib.scss';
     .content {
