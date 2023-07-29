@@ -20,7 +20,7 @@ import HeroCard from "$lib/components/cards/hero-card.svelte";
             <p>Full-stack web developer based in Billings, Montana.</p>
             <p>Graduated in 2023 from Montana State University Billings with an Associates Degree in Computer Programming and Application Development</p>
             <p>Mainly specialized in front-end development (HTML, CSS, JavaScript, Svelte, Vue, Bootstrap, SCSS, and TypeScript)</p>
-            <p>Also experienced in back-end development (Python, C#, PHP, Laravel, MySQL)</p>
+            <p>Also experienced in back-end development (Node, PHP, Laravel, Python, and MySQL)</p>
             <p>Sharp eye for design</p>
             <p>Extremely comfortable with Linux</p>
             <p>Owns a cockatiel</p>
