@@ -9,8 +9,9 @@
     let animTime = 0.4;
 
 </script>
+
 <svelte:head>
-    <title>About | Adam Putman</title>
+    <title>Home | Adam Putman</title>
 </svelte:head>
 
 <div class="content" transition:fly={{y: 50, duration: 500}}>

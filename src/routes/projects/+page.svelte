@@ -4,8 +4,12 @@
     import ProjectCard from "$lib/components/cards/project-card.svelte";
 
     let animTime = 0.4;
-
 </script>
+
+<svelte:head>
+    <title>Projects | Adam Putman</title>
+</svelte:head>
+
 <div class="content" transition:fly={{y: 50, duration: 500}}>
     <div class="row" style="--offset-time: {1 * animTime}s">
         <BannerCard>
