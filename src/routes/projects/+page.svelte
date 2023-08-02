@@ -23,19 +23,13 @@
         </ProjectCard>
     </div>
     <div class="row" style="--offset-time: {3 * animTime}s">
-        <ProjectCard header="My Old Website" image="/images/old-website.jpeg" alt="Screenshot of old website" buttonLink="https://marigoldmusic.live" buttonLabel="Check it out" reversed>
-            <p>An older version of my portfolio website I built in college.</p>
-            <p>Built with <b>Bootstrap and jQuery</b></p>
-        </ProjectCard>
-    </div>
-    <div class="row" style="--offset-time: {4 * animTime}s">
-        <ProjectCard header="Stargaze" image="/images/coming-soon.png" alt="Coming soon" tag="Coming Soon">
+        <ProjectCard header="Stargaze" image="/images/coming-soon.png" alt="Coming soon" tag="Coming Soon" reversed>
             <p>An API-based weather app with a beautiful pixel art style.</p>
             <p>Built with <b>SvelteKit, SCSS, and TypeScript</b></p>
         </ProjectCard>
     </div>
-    <div class="row" style="--offset-time: {5 * animTime}s">
-        <ProjectCard header="RentAssist" image="/images/coming-soon.png" alt="Coming soon" tag="Coming Soon" reversed>
+    <div class="row" style="--offset-time: {4 * animTime}s">
+        <ProjectCard header="RentAssist" image="/images/coming-soon.png" alt="Coming soon" tag="Coming Soon">
             <p>A simple application to help roomates split rent and other expenses on a monthly basis.</p>
             <p>Built with <b>Svelte, Bootstrap, TypeScript, and PocketBase</b></p>
         </ProjectCard>
