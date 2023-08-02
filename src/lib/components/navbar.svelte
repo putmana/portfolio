@@ -17,8 +17,8 @@
         <a class="link" href="/projects">
             PROJECTS
         </a>
-        <a class="link" href="/contact">
-            CONTACT
+        <a class="link" href="https://github.com/putmana">
+            GITHUB
         </a>
     </ul>
 </div>
