@@ -1,9 +1,10 @@
 <script lang=ts>
     export let header: string;
-    export let image: string = "";
+    export let image: string | null = null;
     export let buttonLink: string | null = null;
     export let buttonLabel: string | null = null;
     export let reversed: boolean = false;
+    export let disabled: boolean = false;
     export let alt: string = "";
     export let tag: string | null = null;
 
@@ -12,10 +13,13 @@
 <div class="card" class:reversed>
     <div class="info">
         <div class="header">
-            {header}
+            <div>
+                {header}
+            </div>
+            
             {#if tag !== null}
                 <div class="tag">
-                    <i class="bi bi-cone-striped"></i> {tag}
+                    {tag}
                 </div>
             {/if}
         </div>
@@ -24,15 +28,17 @@
         </div>
         {#if buttonLink !== null && buttonLabel !== null}
             <div class="footer">
-                <a class="btn-primary" href={buttonLink}>
+                <button class="btn-primary" on:click={() => {window.location.href = buttonLink ?? "#"}} disabled={disabled}>
                     {buttonLabel}
-                </a>
+                </button>
             </div>
         {/if}
     </div>
-    <div class="image">
-        <img src={image} alt={alt}>
-    </div>
+    {#if image !== null}
+        <div class="image">
+            <img src={image} alt={alt}>
+        </div>
+    {/if}
     
 </div>
 
@@ -41,7 +47,8 @@
     .card {
         display: flex;
         flex-direction: row;
-        flex-grow: 1;
+        flex: 1;
+        min-height: 300px;
         color: lib.$color-accent-a;
         border-color: lib.$color-accent-a;
         background-color: lib.$color-bg-b;
@@ -50,18 +57,21 @@
             flex: 2;
             display: flex;
             flex-direction: column;
+            
             .header {
                 display: flex;
+                flex-wrap: wrap;
                 font-size: 30pt;
                 font-weight: 600;
                 letter-spacing: -1px;
                 align-items: center;
+                gap: 15px;
+                
                 .tag {
                     font-weight: 500;
+                    text-align: center;
                     letter-spacing: 0px;
                     font-size: 10pt;
-                    margin-left: 15px;
-                    margin-right: 15px;
                     border: 3px dotted lib.$color-accent-a;
                     padding: 8px;
                     padding-left: 8px;
@@ -71,6 +81,7 @@
             .body {
                 display: flex;
                 flex-direction: column;
+                flex-grow: 1;
                 margin-top: 20px;
                 margin-left: 8px;
                 padding-left: 30px;

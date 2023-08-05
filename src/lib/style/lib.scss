@@ -65,25 +65,32 @@ $color-shadow: hsla($hue-accent, $sat-accent, $lig-accent-a, 30%);
 .btn-primary {
     @include btn;
     color: $color-bg-a;
+    font-size: 12pt;
     font-weight: 600;
     background-color: $color-accent-c;
     transition: all 0.2s ease;
     transition: outline none;   
 
     box-shadow: 4px 4px 0px $color-accent-b;
-    &:hover {
+    &:not(:disabled):hover {
         color: $color-accent-b;
         background-color: $color-bg-a;
+        cursor: pointer;
     }
-    &:active {
+    &:not(:disabled):active {
         border-color: $color-accent-a;
         color: $color-accent-a;
         background-color: $color-bg-c;
         box-shadow: 2px 2px 0px $color-accent-a;
     }   
-    &:focus-visible {
+    &:not(:disabled):focus-visible {
         outline: 3px dotted $color-bg-a;
         outline-offset: -6px;
+    }
+
+    &:disabled {
+        opacity: 60%;
+        cursor: not-allowed;
     }
 
     &.on-card {
@@ -98,7 +105,6 @@ $color-shadow: hsla($hue-accent, $sat-accent, $lig-accent-a, 30%);
 .btn-secondary {
     @include btn;
     color: $color-accent-a;
-
 }
 
 .card {
