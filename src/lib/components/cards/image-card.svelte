@@ -12,9 +12,9 @@
     .card {
         flex: 1;
         min-width: 300px;
-        min-height: 300px;
+        min-height: 400px;
         background-image: var(--hero-img);
-        background-position: center;
+        background-position: top center;
         background-size: cover;
     }
 </style>

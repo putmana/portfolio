@@ -30,7 +30,7 @@
             <p>Extremely comfortable with Linux</p>
             <p>Owns a cockatiel</p>
         </InfoCard>
-        <ImageCard image="/images/hero-bg-color-sm.jpg" caption="Red Lodge, Montana" />
+        <ImageCard image="/images/portrait.jpg" caption="Red Lodge, Montana" />
     </div>
 </div>
 
