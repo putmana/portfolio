@@ -13,23 +13,23 @@
 <div class="content" transition:fly={{y: 50, duration: 500}}>
     <div class="row" style="--offset-time: {1 * animTime}s">
         <BannerCard>
-            Projects
+            My Projects
         </BannerCard>
     </div>
     <div class="row" style="--offset-time: {2 * animTime}s">
-        <ProjectCard header="Marigold" image="/images/marigold.png" alt="Screenshot of Marigold" buttonLink="https://marigoldmusic.live/auth/login" buttonLabel="Check out the demo" tag="Under Construction">
-            <p>A full-stack music streaming app that puts you in the driver's seat. Upload your own music and enjoy the convenience of streaming apps while retaining control of your library. By far the coolest thing I've built (yet...)</p>
+        <ProjectCard header="Marigold" image="/images/marigold.png" alt="Screenshot of Marigold" buttonLink="https://marigoldmusic.live/auth/login" buttonLabel="Check out the demo" tag="Full Stack">
+            <p>A demo of a full-stack desktop music streaming app I built as my college capstone project. The idea is to allow users to upload their own music tracks and play them back from here, providing the convenience of music streaming with the control of an MP3 player.</p>
             <p>Built with <b>SvelteKit, SCSS, TypeScript, Laravel, and MySQL</b></p>
         </ProjectCard>
     </div>
     <div class="row" style="--offset-time: {3 * animTime}s">
-        <ProjectCard header="Stargaze" image="/images/stargaze.png" alt="Coming soon" tag="Coming Soon" buttonLink={"https://rentassist.ptmn.io"} buttonLabel="Coming Soon" reversed disabled>
-            <p>A fully responsive weather app with a unique pixel art style. Uses your location and the OpenWeatherMap API to find the weather near you. All icons and backgrounds were created by me.</p>
+        <ProjectCard header="Stargaze" image="/images/stargaze.png" alt="Coming soon" tag="Fully Responsive" buttonLink={"https://stargaze.ptmn.io"} buttonLabel="Check it out" reversed>
+            <p>A fully responsive weather app with a unique pixel art style designed and built entirely by me. I even made the icons. Uses the OpenWeatherMap API to find the weather near you. Built to be a fun project to put on my portfolio.</p>
             <p>Built with <b>SvelteKit, SCSS, and TypeScript</b></p>
         </ProjectCard>
     </div>
     <div class="row" style="--offset-time: {4 * animTime}s">
-        <ProjectCard header="RentAssist" image="/images/coming-soon.png" alt="Coming soon" tag="Coming Soon" buttonLink={"https://rentassist.ptmn.io"} buttonLabel="Coming Soon" disabled>
+        <ProjectCard header="RentAssist" image="/images/coming-soon.png" alt="Coming soon" tag="Full Stack & Fully Responsive" buttonLink={"https://rentassist.ptmn.io"} buttonLabel="Coming Soon" disabled>
             <p>A website to help roomates split rent and other expenses. Initially built as an extremely simple calculator to help me split my rent with my roomates, I saw an opportunity to turn this into a real project.</p>
             <p>Built with <b>Svelte, Bootstrap, TypeScript, and PocketBase</b></p>
         </ProjectCard>
