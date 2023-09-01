@@ -23,7 +23,7 @@
         </ProjectCard>
     </div>
     <div class="row" style="--offset-time: {3 * animTime}s">
-        <ProjectCard header="Skygaze" image="/images/stargaze.png" alt="Coming soon" tag="Fully Responsive" buttonLink={"https://stargaze.ptmn.io"} buttonLabel="Check it out" reversed>
+        <ProjectCard header="Skygaze" image="/images/stargaze.png" alt="Coming soon" tag="Fully Responsive" buttonLink={"https://skygaze.ptmn.io"} buttonLabel="Check it out" reversed>
             <p>A fully responsive weather app with a unique pixel art style designed and built entirely by me. I even made the icons. Uses the OpenWeatherMap API to find the weather near you. Built to be a fun project to put on my portfolio.</p>
             <p>Built with <b>SvelteKit, SCSS, and TypeScript</b></p>
         </ProjectCard>
