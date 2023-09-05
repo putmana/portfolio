@@ -17,12 +17,12 @@
 <div class="content" transition:fly={{y: 50, duration: 500}}>
     <div class="row" style="--offset-time: {1 * animTime}s">
         <HeroCard header="Hi, I'm Adam." image="/images/hero-bg-code-dark.png" buttonLink="/projects" buttonLabel="See My Work">
-            Aspiring front-end web developer
+            Aspiring full-stack web developer
         </HeroCard>
     </div>
     <div class="row" style="--offset-time: {2 * animTime}s">
         <InfoCard header="About Me">
-            <p>Full-stack web developer based in Billings, Montana.</p>
+            <p>Aspiring full-stack web developer based in Billings, Montana.</p>
             <p>Graduated in 2023 from Montana State University Billings with an Associates Degree in Computer Programming and Application Development</p>
             <p>Mainly specialized in front-end development (HTML, CSS, JavaScript, Svelte, Vue, Bootstrap, SCSS, and TypeScript)</p>
             <p>Also experienced in back-end development (PHP, Laravel, Python, and MySQL)</p>
