@@ -1,6 +1,8 @@
 module.exports = {
-    apps : [{
-        name      : "portfolio",
-        script    : "build/index.js"
-    }]
+	apps: [
+		{
+			name: "portfolio",
+			script: "build/index.js"
+		}
+	]
 }

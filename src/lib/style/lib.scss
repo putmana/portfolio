@@ -8,7 +8,7 @@ $xlarge: 1000px;
 $hue-bg: 35;
 $lig-bg-a: 90%;
 $lig-bg-b: 75%;
-$lig-bg-c: 60%; 
+$lig-bg-c: 60%;
 $sat-bg: 10%;
 
 // Hue, saturation, and lightness values for accent colors
@@ -31,83 +31,83 @@ $color-accent-c: hsl($hue-accent, $sat-accent, $lig-accent-c);
 $color-shadow: hsla($hue-accent, $sat-accent, $lig-accent-a, 30%);
 
 @mixin btn {
-    display: block;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: 500;
-    padding: 14px;
-    border: none;
-    box-sizing: border-box;
-    &.bigger {
-        padding: 18px;
-        font-size: 14pt;
-    }
+	display: block;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 500;
+	padding: 14px;
+	border: none;
+	box-sizing: border-box;
+	&.bigger {
+		padding: 18px;
+		font-size: 14pt;
+	}
 }
 
 .content {
-    padding-bottom: 90px;
-    .row {
-        display: flex;
-        flex-direction: row;
-        padding-left: 60px;
-        padding-right: 60px;
-    }
+	padding-bottom: 90px;
+	.row {
+		display: flex;
+		flex-direction: row;
+		padding-left: 60px;
+		padding-right: 60px;
+	}
 
-    @media (max-width: $large) {
-        .row {
-            padding-left: 5px;
-            padding-right: 5px;
-            flex-direction: column;
-        }
-    }
+	@media (max-width: $large) {
+		.row {
+			padding-left: 5px;
+			padding-right: 5px;
+			flex-direction: column;
+		}
+	}
 }
 
 .btn-primary {
-    @include btn;
-    color: $color-bg-a;
-    font-size: 12pt;
-    font-weight: 600;
-    background-color: $color-accent-c;
-    transition: all 0.2s ease;
-    transition: outline none;   
+	@include btn;
+	color: $color-bg-a;
+	font-size: 12pt;
+	font-weight: 600;
+	background-color: $color-accent-c;
+	transition: all 0.2s ease;
+	transition: outline none;
 
-    box-shadow: 4px 4px 0px $color-accent-b;
-    &:not(:disabled):hover {
-        color: $color-accent-b;
-        background-color: $color-bg-a;
-        cursor: pointer;
-    }
-    &:not(:disabled):active {
-        border-color: $color-accent-a;
-        color: $color-accent-a;
-        background-color: $color-bg-c;
-        box-shadow: 2px 2px 0px $color-accent-a;
-    }   
-    &:not(:disabled):focus-visible {
-        outline: 3px dotted $color-bg-a;
-        outline-offset: -6px;
-    }
+	box-shadow: 4px 4px 0px $color-accent-b;
+	&:not(:disabled):hover {
+		color: $color-accent-b;
+		background-color: $color-bg-a;
+		cursor: pointer;
+	}
+	&:not(:disabled):active {
+		border-color: $color-accent-a;
+		color: $color-accent-a;
+		background-color: $color-bg-c;
+		box-shadow: 2px 2px 0px $color-accent-a;
+	}
+	&:not(:disabled):focus-visible {
+		outline: 3px dotted $color-bg-a;
+		outline-offset: -6px;
+	}
 
-    &:disabled {
-        opacity: 60%;
-        cursor: not-allowed;
-    }
+	&:disabled {
+		opacity: 60%;
+		cursor: not-allowed;
+	}
 
-    &.on-card {
-        color: $color-bg-b;
+	&.on-card {
+		color: $color-bg-b;
 
-        &:hover {
-            color: $color-accent-a;
-        }
-    }
+		&:hover {
+			color: $color-accent-a;
+		}
+	}
 }
 
 .btn-secondary {
-    @include btn;
-    color: $color-accent-a;
+	@include btn;
+	color: $color-accent-a;
 }
 
 .card {
-    box-shadow: 8px 8px 0px $color-shadow;
-    margin: 20px;
+	box-shadow: 8px 8px 0px $color-shadow;
+	margin: 20px;
 }
