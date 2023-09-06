@@ -82,7 +82,7 @@
 				simple calculator to help me split my rent with my roomates, I saw an opportunity to turn
 				this into a real project.
 			</p>
-			<p>Built with <b>Bootstrap, Ruby on Rails, and MySQL</b></p>
+			<p>Built with <b>Bootstrap, jQuery, Rails, and MySQL</b></p>
 		</ProjectCard>
 	</div>
 	<div class="row" style="--offset-time: {6 * animTime}s">
