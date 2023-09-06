@@ -72,6 +72,7 @@
 			transform: translate(0, var(--scroll-pos));
 			background-image: var(--hero-img);
 			background-position: left;
+			background-size: contain;
 		}
 	}
 	@media (max-width: lib.$large) {

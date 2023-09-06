@@ -16,7 +16,7 @@
 	<div class="row" style="--offset-time: {1 * animTime}s">
 		<HeroCard
 			header="Hi, I'm Adam."
-			image="/images/hero-bg-code-dark.png"
+			image="/images/hero-bg_scaled.jpg"
 			buttonLink="/projects"
 			buttonLabel="See My Work"
 		>
@@ -39,7 +39,7 @@
 			<p>Knows Linux</p>
 			<p>Owns a cockatiel</p>
 		</InfoCard>
-		<ImageCard image="/images/portrait.jpg" caption="Red Lodge, Montana" />
+		<ImageCard image="/images/portrait_scaled.jpg" caption="Photo of Adam" />
 	</div>
 </div>
 

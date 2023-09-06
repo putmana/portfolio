@@ -17,7 +17,7 @@
 	<div class="row" style="--offset-time: {2 * animTime}s">
 		<ProjectCard
 			header="Marigold"
-			image="/images/marigold.png"
+			image="/images/marigold_scaled.jpg"
 			alt="Screenshot of Marigold"
 			buttonLink="https://marigoldmusic.live/auth/login"
 			buttonLabel="Check it out"
@@ -34,7 +34,7 @@
 	<div class="row" style="--offset-time: {3 * animTime}s">
 		<ProjectCard
 			header="Skygaze"
-			image="/images/stargaze.png"
+			image="/images/stargaze_scaled.png"
 			alt="Screenshot of Stargaze"
 			tag="Fully Responsive"
 			buttonLink={"https://skygaze.ptmn.io"}
@@ -52,7 +52,7 @@
 	<div class="row" style="--offset-time: {4 * animTime}s">
 		<ProjectCard
 			header="B-Sides"
-			image="/images/bsides.png"
+			image="/images/bsides_scaled.jpg"
 			alt="Screenshot of B-Sides"
 			tag="Full Stack & Fully Responsive"
 			buttonLink={"https://bsides.ptmn.io"}
@@ -88,7 +88,7 @@
 	<div class="row" style="--offset-time: {6 * animTime}s">
 		<ProjectCard
 			header="Grocery List"
-			image="/images/grocery-list.png"
+			image="/images/grocery-list_scaled.png"
 			alt="Screenshot of grocery list website"
 			tag="Fully Responsive"
 			buttonLink={"https://demo.ptmn.io/grocery-list"}
