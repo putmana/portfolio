@@ -19,16 +19,15 @@
 			header="Marigold"
 			image="/images/marigold_scaled.jpg"
 			alt="Screenshot of Marigold"
-			buttonLink="https://marigoldmusic.live/auth/login"
-			buttonLabel="Check it out"
-			tag="Full Stack"
+			buttonLink="https://github.com/putmana/marigold-client/tree/rewrite"
+			buttonLabel="GitHub"
+			tag="Full Stack & Fully Responsive"
 		>
 			<p>
 				A demo of a full-stack desktop music streaming app I built as my college capstone project.
-				The idea is to allow users to upload their own music tracks and play them back from here,
-				providing the convenience of music streaming with the control of an MP3 player.
 			</p>
-			<p>Built with <b>SvelteKit, SCSS, TypeScript, Laravel, and MySQL</b></p>
+			<p>NOTE: This is currently undergoing a massive rewrite. See the GitHub repo for details.</p>
+			<p>Built with <b>SvelteKit, SCSS, TypeScript, and PocketBase</b></p>
 		</ProjectCard>
 	</div>
 	<div class="row" style="--offset-time: {3 * animTime}s">
