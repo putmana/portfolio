@@ -19,7 +19,7 @@
 			header="Marigold"
 			image="/images/marigold_scaled.jpg"
 			alt="Screenshot of Marigold"
-			buttonLink="https://github.com/putmana/marigold-client/tree/rewrite"
+			buttonLink="https://github.com/putmana/marigold-client/"
 			buttonLabel="GitHub"
 			tag="Full Stack & Fully Responsive"
 		>
