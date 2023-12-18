@@ -19,15 +19,16 @@
 			header="Marigold"
 			image="/images/marigold_scaled.jpg"
 			alt="Screenshot of Marigold"
-			buttonLink="https://github.com/putmana/marigold-client/"
-			buttonLabel="GitHub"
+			buttonLink="https://marigoldmusic.live"
+			buttonLabel="Check it out"
 			tag="Full Stack & Fully Responsive"
 		>
 			<p>
-				A demo of a full-stack desktop music streaming app I built as my college capstone project.
+				A fully responsive, modern music locker. Upload your own files and stream them from
+				anywhere. I originally built Marigold as my college capstone project, but I enjoyed the
+				process so much that I've been continually working on it ever since.
 			</p>
-			<p>NOTE: This is currently undergoing a massive rewrite. See the GitHub repo for details.</p>
-			<p>Built with <b>SvelteKit, SCSS, TypeScript, and PocketBase</b></p>
+			<p>Built with <b>SvelteKit, SCSS, TypeScript, and Supabase</b></p>
 		</ProjectCard>
 	</div>
 	<div class="row" style="--offset-time: {3 * animTime}s">
